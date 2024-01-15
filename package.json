@@ -1,0 +1,21 @@
+{
+  "name": "horemowbooksapi",
+  "version": "1.0.0",
+  "description": "hrmw books api",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "dev": "nodemon server"
+  },
+  "author": "Ransford",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "date-fns": "^3.2.0",
+    "express": "^4.18.2",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
