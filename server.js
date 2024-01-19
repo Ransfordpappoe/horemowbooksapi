@@ -7,10 +7,12 @@ const corsOptions = require('./config/corsOptions');
 const { logger } = require('./middleware/logEvents');
 const errorHandler = require('./middleware/errorHandler');
 const mongoose = require('mongoose');
-const connectDB = require('./config/dbConn');
+const dbConn = require('./config/dbConn');
 const PORT = process.env.PORT || 3500;
 
-connectDB();
+dbConn.connectDB();
+dbConn.devotionDB();
+dbConn.audioBooksDB();
 
 app.use(logger);
 app.use(cors(corsOptions));
@@ -20,6 +22,8 @@ app.use('/', express.static(path.join(__dirname, '/public')));
 
 app.use('/', require('./routes/root'));
 app.use('/books',require('./routes/api/books'));
+app.use('/dailydevotioneng',require('./routes/api/devotion'));
+app.use('/audiobooks',require('./routes/api/audiobooks'));
 
 app.all('*',(req, res)=>{
     res.status(404);
