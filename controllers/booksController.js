@@ -26,7 +26,7 @@ const createNewBooks= async(req, res)=>{
         audio: req.body.audio,
         authorinfo: req.body.author,
         summary: req.body.summary,
-        authorpic: req.body.authorPic
+        authorpic: req.body.authorpic
     }
 
         if(!newBooks.title){
