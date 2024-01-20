@@ -1,0 +1,11 @@
+20240120	01:16:54	a79d3af4-5a98-4fd2-9f71-c19e144cc405	GET	undefined	/books
+20240120	01:16:54	c666479d-9aa6-4cdd-a1a6-fcd506a87642	GET	undefined	/favicon.ico
+20240120	01:20:37	e239760c-b136-4e97-a312-1c55ad813515	GET	undefined	/text/books.json
+20240120	01:22:23	573bb597-6614-4241-8923-fe466eb23559	GET	undefined	/text/books.json
+20240120	01:22:24	cefa9b29-7663-44e1-a40f-c84202ea4f48	GET	undefined	/text/books.json
+20240120	01:37:39	be1a6ee3-83cc-4c6b-9d1a-0b6912f0395c	GET	undefined	/books
+20240120	01:39:01	219728e5-c42d-46e3-9ff4-9499855acbba	DELETE	undefined	/books/2
+20240120	01:40:27	47427428-9fc4-4a04-8312-39c1c3796d35	GET	undefined	/books/2
+20240120	01:42:06	9bd2025b-92af-49b9-afe4-90e7877d16d7	DELETE	undefined	/books/2
+20240120	01:43:50	ba6a02a5-96e5-4437-9fc6-9a7a0b5de410	DELETE	undefined	/books
+20240120	01:46:42	e0733847-ad0d-4918-9688-a9729bd25b9d	PUT	undefined	/books

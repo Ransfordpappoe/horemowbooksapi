@@ -3,10 +3,10 @@ const fs = require('fs');
 const path = require('path');
 
 const data ={
-    books: require('../model/books.json'),
+    books: require('../public/dbdata/books.json'),
     setBooks: function(data) {
         this.books=data
-        fs.writeFileSync(path.join(__dirname,'../model/books.json'),JSON.stringify(this.books,null,2));
+        fs.writeFileSync(path.join(__dirname,'../public/dbdata/books.json'),JSON.stringify(this.books,null,2));
     }
 }
 
