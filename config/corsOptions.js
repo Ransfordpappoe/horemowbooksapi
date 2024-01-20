@@ -1,5 +1,6 @@
 const whitelist =[
-    process.env.SITE_URI
+    process.env.SITE_URI,
+    'http://localhost:3005'
 ];
 
 const corsOptions = {

@@ -1,5 +1,6 @@
 require('dotenv').config();
 const express = require('express');
+const bodyParser = require('body-parser');
 const app = express();
 const path = require('path');
 const cors = require('cors');
@@ -11,11 +12,12 @@ const dbConn = require('./config/dbConn');
 const PORT = process.env.PORT || 3500;
 
 dbConn.connectDB();
-dbConn.devotionDB();
-dbConn.audioBooksDB();
+
 
 app.use(logger);
 app.use(cors(corsOptions));
+app.use(bodyParser.json({ limit: '50mb' }));
+app.use(bodyParser.urlencoded({ limit: '50mb', extended: true }));
 app.use(express.urlencoded({extended: false}));
 app.use(express.json());
 app.use('/', express.static(path.join(__dirname, '/public')));
@@ -37,8 +39,8 @@ app.all('*',(req, res)=>{
 });
 
 app.use(errorHandler);
-
+app.listen(PORT, () => console.log(`server running on port ${PORT}`));
 mongoose.connection.once('open', ()=>{
     console.log('Connected to MongoDB');
-    app.listen(PORT, () => console.log(`server running on port ${PORT}`));
+   
 });

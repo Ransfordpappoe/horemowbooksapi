@@ -1,9 +1,13 @@
 const Book = require('../model/AudioBook');
 
 const getAllBooks= async(req, res)=>{
-    const books = await Book.find();
-    if(!books) return res.status(204).json({'message':'No books found'});
-    res.json(books);
+    try{
+        const books = await Book.find();
+        if(!books) return res.status(204).json({'message':'No books found'});
+        res.json(books);
+    }catch{
+
+    }
 }
 
 const createNewBooks= async(req, res)=>{

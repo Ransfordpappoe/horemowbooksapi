@@ -15,6 +15,14 @@ const engdevotionSchema = new Schema({
         type: String,
         required: true
     },
+    bookcontent2: {
+        type: String,
+        required: false
+    },
+    bookcontent3: {
+        type: String,
+        required: false
+    },
     image: {
         type: String,
         required: true
