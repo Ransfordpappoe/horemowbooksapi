@@ -1,6 +1,8 @@
 const whitelist =[
     process.env.SITE_URI,
-    'http://localhost:3005'
+    'http://localhost:3005',
+    'https://horemowbookreaderlite.web.app',
+    'https://horemowbookreaderlite.com',
 ];
 
 const corsOptions = {
