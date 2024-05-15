@@ -26,6 +26,8 @@ app.use('/', require('./routes/root'));
 app.use('/books',require('./routes/api/books'));
 app.use('/dailydevotioneng',require('./routes/api/devotion'));
 app.use('/audiobooks',require('./routes/api/audiobooks'));
+app.use('/createusertoken',require('./routes/api/liveToken'));
+app.use('/tvshows',require('./routes/api/tvschedule'));
 
 app.all('*',(req, res)=>{
     res.status(404);
