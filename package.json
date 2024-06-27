@@ -10,7 +10,7 @@
   "author": "Ransford",
   "license": "ISC",
   "dependencies": {
-    "@stream-io/node-sdk": "^0.1.13",
+    "@stream-io/node-sdk": "^0.2.3",
     "body-parser": "^1.20.2",
     "cors": "^2.8.5",
     "date-fns": "^3.2.0",
