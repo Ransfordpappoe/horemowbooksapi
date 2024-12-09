@@ -68,7 +68,7 @@ const deleteBook = async(req, res) =>{
 
 const getBook = async(req, res)=>{
 
-    const book = data.getEngBooks()().find(bk => bk.id === parseInt(req.params.id));
+    const book = data.getEngBooks().find(bk => bk.id === parseInt(req.params.id));
     if(!book){
         return res.status(400).json({'message': `book id ${req.params.id} not found`});
     }

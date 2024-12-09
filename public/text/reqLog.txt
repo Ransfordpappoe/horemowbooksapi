@@ -1785,3 +1785,13 @@
 20241209	01:22:02	94762551-c7ff-4ccb-ba80-d9127ca84646	GET	undefined	/books/2
 20241209	01:23:23	fd50a262-ec4e-4c7d-b072-a7402009e94c	GET	undefined	/books/2
 20241209	01:26:36	7d9c16f2-2d52-4f88-abf2-feb803c7a4bd	GET	undefined	/books
+20241209	03:36:22	43ae4cd4-87a2-4427-bb04-17e91850db8e	GET	http://localhost:3001	/books/1
+20241209	03:38:47	6a88193d-c66d-4528-b1e6-341870bbad37	GET	http://localhost:3001	/books/65
+20241209	03:38:47	8e15aa85-a6c6-4315-99ea-15d639c03e14	GET	http://localhost:3001	/books/65
+20241209	03:38:47	64b9b234-b9e2-4558-942e-7e17ef91a9c4	GET	http://localhost:3001	/books/65
+20241209	03:39:18	90cd4de0-e5d0-4182-a9aa-b96dbc4b67e0	GET	http://localhost:3001	/books/55
+20241209	03:39:18	414b0db9-0eee-44ab-a0dd-865108a14aee	GET	http://localhost:3001	/books/55
+20241209	03:39:18	8b39918d-8542-419d-8ee7-c1d7cf43389b	GET	http://localhost:3001	/books/55
+20241209	03:40:06	8e95414d-bc12-430b-af47-65b2d1fe9098	GET	http://localhost:3001	/books/54
+20241209	03:40:06	4182562b-16a2-4b82-8ce7-e739760e9fed	GET	http://localhost:3001	/books/54
+20241209	03:40:06	3d858421-60df-4d48-a025-bd3bb57c517c	GET	http://localhost:3001	/books/54
